@@ -4,7 +4,7 @@
     "description": "recipes, drink mixes, food, how-tos",
     "main": "index.js",
     "scripts": {
-        "docs:build": "vuepress build docs",
+        "docs:build": "vuepress build .",
         "dev": "npm run docs:dev",
         "docs:dev": "vuepress dev .",
         "test": "mocha"
