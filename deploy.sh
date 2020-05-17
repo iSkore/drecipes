@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:iSkore/recipes.git master:gh-pages
+git push -f git@github.com:iSkore/drecipes.git master:gh-pages
 
 cd -

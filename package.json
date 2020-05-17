@@ -1,5 +1,5 @@
 {
-    "name": "recipes",
+    "name": "drecipes",
     "version": "1.0.0",
     "description": "recipes, drink mixes, food, how-tos",
     "main": "index.js",
@@ -11,17 +11,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/iSkore/recipes.git"
+        "url": "git+https://github.com/iSkore/drecipes.git"
     },
     "keywords": [
+        "drecipes",
         "recipes"
     ],
     "author": "Nick Soggin",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/iSkore/recipes/issues"
+        "url": "https://github.com/iSkore/drecipes/issues"
     },
-    "homepage": "https://github.com/iSkore/recipes#readme",
+    "homepage": "https://github.com/iSkore/drecipes#readme",
     "devDependencies": {
         "mocha": "7.1.2",
         "vuepress": "1.5.0",
