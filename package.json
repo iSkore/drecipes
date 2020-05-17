@@ -1,29 +1,30 @@
 {
-  "name": "recipes",
-  "version": "1.0.0",
-  "description": "recipes, drink mixes, food, how-tos",
-  "main": "index.js",
-  "scripts": {
-    "build": "vuepress build docs",
-    "dev": "vuepress dev .",
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iSkore/recipes.git"
-  },
-  "keywords": [
-    "recipes"
-  ],
-  "author": "Nick Soggin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iSkore/recipes/issues"
-  },
-  "homepage": "https://github.com/iSkore/recipes#readme",
-  "devDependencies": {
-    "mocha": "7.1.2",
-    "vuepress": "1.5.0",
-    "vuepress-plugin-seo": "0.1.2"
-  }
+    "name": "recipes",
+    "version": "1.0.0",
+    "description": "recipes, drink mixes, food, how-tos",
+    "main": "index.js",
+    "scripts": {
+        "docs:build": "vuepress build docs",
+        "dev": "npm run docs:dev",
+        "docs:dev": "vuepress dev .",
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iSkore/recipes.git"
+    },
+    "keywords": [
+        "recipes"
+    ],
+    "author": "Nick Soggin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/iSkore/recipes/issues"
+    },
+    "homepage": "https://github.com/iSkore/recipes#readme",
+    "devDependencies": {
+        "mocha": "7.1.2",
+        "vuepress": "1.5.0",
+        "vuepress-plugin-seo": "0.1.2"
+    }
 }
