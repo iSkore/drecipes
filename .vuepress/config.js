@@ -12,7 +12,7 @@ function p( n ) {
 }
 
 module.exports = {
-    base: '/recipes/',
+    base: '/drecipes/',
     themeConfig: {
         docsDir: 'docs',
         editLinkText: 'Help us improve this page!',
