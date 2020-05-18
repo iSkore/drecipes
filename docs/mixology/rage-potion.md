@@ -7,10 +7,10 @@
 - <MixologyConversion n="0.15 floz"/> blue curacao or blueberry liqueur
 - <MixologyConversion n="0.1 barspoons"/> of yellow chartreuse
 
----
-
 > - shake and strain into potion bottle
 > - top with seltzer
+
+---
 
 **citation**:
 [Rage Potion | How to Drink](https://www.youtube.com/watch?v=BDogSMnqZzU)
