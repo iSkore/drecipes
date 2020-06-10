@@ -28,6 +28,7 @@ module.exports = {
         docsDir: 'docs',
         editLinks: true,
         editLinkText: 'Edit',
+        activeHeaderLinks: false,
         nav: [
             { text: 'home', link: '/' },
             { text: 'info', link: '/info/' }
@@ -43,7 +44,7 @@ module.exports = {
                     .map( ( i ) => p( join( pdrinks, i ) ) )
                     .filter( i => !i.endsWith( 'README.md' ) )
             },
-            [ '/create/', 'create' ]
+            [ 'https://github.com/iSkore/drecipes/issues/new?template=new_recipe.md', 'create' ]
         ]
     },
     plugins: [

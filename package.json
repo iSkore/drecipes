@@ -25,10 +25,8 @@
     "homepage": "https://github.com/iSkore/drecipes#readme",
     "devDependencies": {},
     "dependencies": {
-        "@octokit/auth": "2.0.0",
-        "@octokit/rest": "17.9.2",
         "axios": "0.19.2",
-        "mathjs": "7.0.0",
+        "mathjs": "^7.0.1",
         "vuepress": "1.5.0"
     }
 }
