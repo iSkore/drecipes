@@ -4,9 +4,9 @@
     "description": "recipes, drink mixes, food, how-tos",
     "main": "index.js",
     "scripts": {
-        "docs:build": "vuepress build .",
-        "dev": "npm run docs:dev",
-        "docs:dev": "vuepress dev .",
+        "build": "vuepress build docs",
+        "dev": "vuepress dev docs",
+        "lint": "vue-cli-service lint",
         "test": "mocha"
     },
     "repository": {
@@ -23,9 +23,10 @@
         "url": "https://github.com/iSkore/drecipes/issues"
     },
     "homepage": "https://github.com/iSkore/drecipes#readme",
-    "devDependencies": {
-        "mocha": "7.1.2",
-        "vuepress": "1.5.0",
-        "vuepress-plugin-seo": "0.1.2"
+    "devDependencies": {},
+    "dependencies": {
+        "axios": "0.19.2",
+        "mathjs": "^7.0.1",
+        "vuepress": "1.5.0"
     }
 }
