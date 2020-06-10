@@ -35,6 +35,7 @@
         },
         methods: {
             convert() {
+                console.log( 'ok' );
                 this.lvi++;
 
                 if ( this.lvi >= this.liquidVolumeOptions.length ) {

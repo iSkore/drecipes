@@ -1,14 +1,16 @@
 ---
 home: true
-heroImage:
+heroImage: /assets/dresipes.jpg
+heroText: Drecipes
+tagline: '[Dress-a-peez] recipes, drink mixes, food, how-tos'
 actionText: Get Started →
-actionLink: /guide``
+actionLink: /guide/
 features:
-  - title: Food
-    details: Food
-  - title: Mixology
-    details: Mixology
-  - title: Other
-    details: Other
-footer: Made with VuePress
+- title: Recipes
+  details: Food, grilling, etc.
+- title: Mixology
+  details: drinks, etc.
+- title: Other
+  details: drinks, etc.
+footer: Developed using VuePress | MIT Licensed
 ---

@@ -14,12 +14,21 @@ function p( n ) {
 }
 
 module.exports = {
-    base: '/drecipes/',
+    title: pack.name,
+    description: pack.description,
+    head: [
+        [ 'meta', { name: 'theme-color', content: '#3eaf7c' } ],
+        [ 'meta', { name: 'apple-mobile-web-app-capable', content: 'yes' } ],
+        [ 'meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' } ]
+    ],
+    // base: '/drecipes/',
+    host: '0.0.0.0',
     themeConfig: {
-        convert: 123,
         repo,
         docsDir: 'docs',
-        editLinkText: 'Help us improve this page!',
+        editLinks: true,
+        editLinkText: 'Edit',
+        activeHeaderLinks: false,
         nav: [
             { text: 'home', link: '/' },
             { text: 'info', link: '/info/' }
@@ -34,10 +43,11 @@ module.exports = {
                 children: fs.readdirSync( pdrinks )
                     .map( ( i ) => p( join( pdrinks, i ) ) )
                     .filter( i => !i.endsWith( 'README.md' ) )
-                // c: [
-                //     '/docs/mixology/rage-potion.md'
-                // ]
-            }
+            },
+            [ 'https://github.com/iSkore/drecipes/issues/new?template=new_recipe.md', 'create' ]
         ]
-    }
+    },
+    plugins: [
+        require( './buffer' )
+    ]
 };
