@@ -21,7 +21,7 @@ module.exports = {
         [ 'meta', { name: 'apple-mobile-web-app-capable', content: 'yes' } ],
         [ 'meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' } ]
     ],
-    // base: '/drecipes/',
+    base: process.env.NODE_ENV === 'production' ? '/drecipes/' : '',
     host: '0.0.0.0',
     themeConfig: {
         repo,
@@ -44,7 +44,7 @@ module.exports = {
                     .map( ( i ) => p( join( pdrinks, i ) ) )
                     .filter( i => !i.endsWith( 'README.md' ) )
             },
-            [ 'https://github.com/iSkore/drecipes/issues/new?template=new_recipe.md', 'create' ]
+            [ `${ pack.bugs.url }/new?template=new_recipe.md`, 'create' ]
         ]
     },
     plugins: [
