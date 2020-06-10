@@ -5,7 +5,7 @@
 - <MixologyConversion n="2 floz"/> vodka
 - <MixologyConversion n="0.25 floz"/> raspberry liqueur
 - <MixologyConversion n="0.15 floz"/> blue curacao or blueberry liqueur
-- <MixologyConversion n="0.1 barspoons"/> of yellow chartreuse
+- <MixologyConversion n="1 barspoon"/> of yellow chartreuse
 
 > - shake and strain into potion bottle
 > - top with seltzer
