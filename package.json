@@ -23,7 +23,9 @@
         "url": "https://github.com/iSkore/drecipes/issues"
     },
     "homepage": "https://github.com/iSkore/drecipes#readme",
-    "devDependencies": {},
+    "devDependencies": {
+        "vuepress-plugin-mathjax": "^1.2.8"
+    },
     "dependencies": {
         "axios": "0.19.2",
         "mathjs": "^7.0.1",

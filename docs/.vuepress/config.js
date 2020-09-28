@@ -45,7 +45,6 @@ module.exports = {
                     .map( ( item ) => {
                         const fpath = join( pAuntEuniav, item );
 
-                        console.log( fs.lstatSync( fpath ).isDirectory() );
                         if ( fs.lstatSync( fpath ).isDirectory() ) {
                             return relativePath( join( fpath, `${ item }.md` ) );
                         }
@@ -66,6 +65,15 @@ module.exports = {
         ]
     },
     plugins: [
-        require( './buffer' )
+        require( './buffer' ),
+        [
+            'vuepress-plugin-mathjax',
+            {
+                target: 'svg',
+                macros: {
+                    '*': '\\times'
+                }
+            }
+        ]
     ]
 };

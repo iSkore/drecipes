@@ -14,28 +14,44 @@ export default {
     props: [ 'n' ],
     data() {
         return {
+            mUnit: null,
+            selectedUnitPtr: null,
             badgeColor: 'success',
 
-            // liquid volume index
-            lvi: 0,
-            liquidVolumeOptions: [ 'floz', 'mL' ]
+            // unit option index
+            unitOptionIndex: 0,
+
+            // don't add all available to these arrays because users probably don't want to convert cups to barspoons
+            volumeOptions: [ 'floz', 'mL' ],
+            massOptions: [ 'g', 'oz' ]
         };
     },
     computed: {
         amount() {
             try {
-                const { unit } = this.$math.unit( this.n ).toJSON();
+                this.mUnit = this.$math.unit( this.n );
 
-                if ( !this.liquidVolumeOptions.includes( unit ) ) {
-                    this.liquidVolumeOptions.push( unit );
-                    this.lvi = this.liquidVolumeOptions.indexOf( unit );
+                const { unit } = this.mUnit.toJSON();
+
+                this.selectedUnitPtr = (
+                    this.mUnit.hasBase( 'MASS' ) ? this.massOptions :
+                        this.mUnit.hasBase( 'VOLUME' ) ? this.volumeOptions :
+                            this.volumeOptions
+                );
+
+                if ( !this.selectedUnitPtr.includes( unit ) ) {
+                    this.selectedUnitPtr.push( unit );
+                    this.unitOptionIndex = this.selectedUnitPtr.indexOf( unit );
                 }
 
-                return this.round( this.$math.unit( this.n ).to(
-                    this.liquidVolumeOptions[ this.lvi ]
-                ).toString() );
+                return this.round(
+                    this.$math.unit( this.n )
+                        .to( this.selectedUnitPtr[ this.unitOptionIndex ] )
+                        .toString()
+                );
             }
             catch ( e ) {
+                console.log( e );
                 this.badgeColor = 'warning';
                 return this.n;
             }
@@ -43,11 +59,10 @@ export default {
     },
     methods: {
         convert() {
-            console.log( 'ok' );
-            this.lvi++;
+            this.unitOptionIndex++;
 
-            if ( this.lvi >= this.liquidVolumeOptions.length ) {
-                this.lvi = 0;
+            if ( this.unitOptionIndex >= this.selectedUnitPtr.length ) {
+                this.unitOptionIndex = 0;
             }
         },
         round( n ) {
