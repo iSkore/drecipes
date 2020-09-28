@@ -10,4 +10,5 @@ Please make an [issue](https://github.com/iSkore/drecipes/issues) ticket if ther
 
 Some assumptions had to be made.
 Some ingredient directions and volumes had to be assumed.
-Recommendations can be made by creating an [issue](https://github.com/iSkore/drecipes/issues) ticket!
+Some instructions could not be deciphered.
+Recommendations can be made by creating an [issue](https://github.com/iSkore/drecipes/issues) ticket.

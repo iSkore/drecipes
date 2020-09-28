@@ -3,7 +3,7 @@ title: chicken and rice deluxe
 tags:
   - aunt euniav
   - chicken
-  - needs-assistance
+  - need-assistance
 ---
 
 # {{ $frontmatter.title }}

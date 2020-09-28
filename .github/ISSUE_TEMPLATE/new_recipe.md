@@ -2,7 +2,7 @@
 name: New Recipe
 about: Suggest a new recipe be added to this project
 title: 'Recipe: '
-labels: new recipe
+labels: new-recipe
 assignees: iSkore
 
 ---

@@ -2,17 +2,21 @@
 title: chicken on rice casserole
 tags:
   - aunt euniav
+  - need-assistance
 ---
 
 # {{ $frontmatter.title }}
 
+> ### NOTES
+> MARKED AS **NEEDS ASSISTANCE**
+
 ### ingredients:
 
-- <MixologyConversion n="12 cups"/> apples
+- <MixologyConversion n="1 cup"/> now brown rice on ... [?]
 
 ### instructions:
 
-- stir all together
+- bake in oven at 350º
 
 ---
 
