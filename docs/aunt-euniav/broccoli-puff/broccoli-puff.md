@@ -9,7 +9,7 @@ tags:
 ### ingredients:
 
 - <MixologyConversion n="2 pkg"/> broccoli
-- <MixologyConversion n="3 eggs"/> separate
+- <MixologyConversion n="3"/> eggs; separate
 - <MixologyConversion n="1 tbsp"/> flour
 - <MixologyConversion n="1 tbsp"/> butter, softened
 - <MixologyConversion n="0.25 tsp"/> salt

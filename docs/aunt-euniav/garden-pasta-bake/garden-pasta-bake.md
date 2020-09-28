@@ -37,6 +37,6 @@ servings: 8
 ---
 
 **citation**:
-[Aunt Euniav](../README.md)
+Unknown magazine clipping
 
 ![image](./image.jpg)

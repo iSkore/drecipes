@@ -31,12 +31,12 @@ module.exports = {
         editLinkText: 'Edit',
         activeHeaderLinks: false,
         nav: [
-            { text: 'home', link: '/' },
-            { text: 'info', link: '/info/' }
+            { text: 'Home', link: '/' },
+            { text: 'Info', link: '/info/' }
         ],
         sidebar: [
-            [ '/', 'home' ],
-            '/food/',
+            [ '/', 'Home' ],
+            [ '/food/', 'Food' ],
             {
                 title: 'Aunt Euniav',
                 path: relativePath( pAuntEuniav ),
@@ -54,14 +54,17 @@ module.exports = {
                     .filter( ( i ) => !i.endsWith( 'README.md' ) && i.endsWith( '.md' ) )
             },
             {
-                title: 'mixology',
+                title: 'Mixology',
                 path: relativePath( pdrinks ),
                 sidebarDepth: 1,
                 children: fs.readdirSync( pdrinks )
                     .map( ( i ) => relativePath( join( pdrinks, i ) ) )
                     .filter( ( i ) => !i.endsWith( 'README.md' ) )
             },
-            [ `${ pack.bugs.url }/new?template=new_recipe.md`, 'create' ]
+            [
+                `${ pack.bugs.url }/new?assignees=iSkore&labels=new-recipe&template=new_recipe.md&title=Recipe%3A+`,
+                'Create'
+            ]
         ]
     },
     plugins: [

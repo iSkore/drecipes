@@ -9,7 +9,7 @@ tags:
 ### ingredients:
 
 - <MixologyConversion n="2 pkg"/> frozen chopped broccoli
-- <MixologyConversion n="2 eggs"/> beaten
+- <MixologyConversion n="2"/> eggs beaten
 - <MixologyConversion n="1 cup"/> mayonnaise
 - <MixologyConversion n="0.5 cup"/> milk
 - <MixologyConversion n="1 cup"/> grated sharp cheddar cheese

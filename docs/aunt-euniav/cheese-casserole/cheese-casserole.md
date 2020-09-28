@@ -10,7 +10,7 @@ tags:
 
 - <MixologyConversion n="10 slices"/> of bread
 - <MixologyConversion n="0.5 lbs"/> cheese
-- <MixologyConversion n="3 eggs"/>
+- <MixologyConversion n="3"/> eggs
 - <MixologyConversion n="2.5 cups"/> milk
 - <MixologyConversion n="0.5 tsp"/> dry mustard
 - <MixologyConversion n="1 tsp"/> salt

@@ -28,8 +28,8 @@ tags:
 when you didn't have time to [?] potatoes this is equally good)
 - combine all the above
 - melt 1 stick margarine
-- add 1 cup milk and pour over potatoe mixture
-- pour in ${9"x13"}$ pan
+- add 1 cup milk and pour over potato mixture
+- pour in ${9x13}$ pan
 - sprinkle with crushed cornflakes
 - combine [?] on crunch [?] [?]
 - bake at 350º for 45-60 minutes

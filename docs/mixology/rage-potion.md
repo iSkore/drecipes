@@ -1,4 +1,14 @@
-# rage potion
+---
+title: Rage Potion
+tags:
+  - mixology
+  - fall drink
+  - vodka
+---
+
+# {{ $frontmatter.title }}
+
+### {{ $frontmatter.description }}
 
 - <MixologyConversion n="1 floz"/> lemon juice
 - <MixologyConversion n="0.5 floz"/> simple syrup
