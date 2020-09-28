@@ -14,6 +14,10 @@ export default ( {
     if ( !Vue.prototype.$math ) {
         math.createUnit( 'barspoon', '2 mL' );
         math.createUnit( 'barspoons', '2 mL' );
+
+        math.createUnit( 'tsp', '1 teaspoon' );
+        math.createUnit( 'tbsp', '1 tablespoon' );
+
         Vue.prototype.$math = math;
     }
 }
