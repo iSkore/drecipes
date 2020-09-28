@@ -4,12 +4,13 @@ const
     { join } = require( 'path' );
 
 const
-    repo    = pack.repository.url.replace( 'git+', '' ).replace( '.git, ' ),
-    cwd     = process.cwd(),
-    pdocs   = join( cwd, 'docs' ),
-    pdrinks = join( pdocs, 'mixology' );
+    repo        = pack.repository.url.replace( 'git+', '' ).replace( '.git, ' ),
+    cwd         = process.cwd(),
+    pdocs       = join( cwd, 'docs' ),
+    pAuntEuniav = join( pdocs, 'aunt-euniav' ),
+    pdrinks     = join( pdocs, 'mixology' );
 
-function p( n ) {
+function relativePath( n ) {
     return n.replace( pdocs, '' );
 }
 
@@ -37,17 +38,42 @@ module.exports = {
             [ '/', 'home' ],
             '/food/',
             {
+                title: 'Aunt Euniav',
+                path: relativePath( pAuntEuniav ),
+                sidebarDepth: 1,
+                children: fs.readdirSync( pAuntEuniav )
+                    .map( ( item ) => {
+                        const fpath = join( pAuntEuniav, item );
+
+                        if ( fs.lstatSync( fpath ).isDirectory() ) {
+                            return relativePath( join( fpath, `${ item }.md` ) );
+                        }
+
+                        return relativePath( join( pAuntEuniav, item ) );
+                    } )
+                    .filter( ( i ) => !i.endsWith( 'README.md' ) && i.endsWith( '.md' ) )
+            },
+            {
                 title: 'mixology',
-                path: p( pdrinks ),
+                path: relativePath( pdrinks ),
                 sidebarDepth: 1,
                 children: fs.readdirSync( pdrinks )
-                    .map( ( i ) => p( join( pdrinks, i ) ) )
-                    .filter( i => !i.endsWith( 'README.md' ) )
+                    .map( ( i ) => relativePath( join( pdrinks, i ) ) )
+                    .filter( ( i ) => !i.endsWith( 'README.md' ) )
             },
             [ `${ pack.bugs.url }/new?template=new_recipe.md`, 'create' ]
         ]
     },
     plugins: [
-        require( './buffer' )
+        require( './buffer' ),
+        [
+            'vuepress-plugin-mathjax',
+            {
+                target: 'svg',
+                macros: {
+                    '*': '\\times'
+                }
+            }
+        ]
     ]
 };
