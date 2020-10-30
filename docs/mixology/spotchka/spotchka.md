@@ -11,7 +11,7 @@ tags:
 
 ### {{ $frontmatter.description }}
 
-![spotchka](./spotchka.jpg)
+![spotchka](./image.jpg)
 
 ### ingredients:
 
