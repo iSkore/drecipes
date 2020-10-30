@@ -58,8 +58,16 @@ module.exports = {
                 path: relativePath( pdrinks ),
                 sidebarDepth: 1,
                 children: fs.readdirSync( pdrinks )
-                    .map( ( i ) => relativePath( join( pdrinks, i ) ) )
-                    .filter( ( i ) => !i.endsWith( 'README.md' ) )
+                    .map( ( item ) => {
+                        const fpath = join( pdrinks, item );
+
+                        if ( fs.lstatSync( fpath ).isDirectory() ) {
+                            return relativePath( join( fpath, `${ item }.md` ) );
+                        }
+
+                        return relativePath( join( pdrinks, item ) );
+                    } )
+                    .filter( ( i ) => !i.endsWith( 'README.md' ) && i.endsWith( '.md' ) )
             },
             [
                 `${ pack.bugs.url }/new?assignees=iSkore&labels=new-recipe&template=new_recipe.md&title=Recipe%3A+`,
