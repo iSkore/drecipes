@@ -7,11 +7,26 @@ const
     repo        = pack.repository.url.replace( 'git+', '' ).replace( '.git, ' ),
     cwd         = process.cwd(),
     pdocs       = join( cwd, 'docs' ),
+    pfood       = join( pdocs, 'food' ),
     pAuntEuniav = join( pdocs, 'aunt-euniav' ),
-    pdrinks     = join( pdocs, 'mixology' );
+    pmixology   = join( pdocs, 'mixology' );
 
 function relativePath( n ) {
     return n.replace( pdocs, '' );
+}
+
+function readAndMapDocs( docPath ) {
+    return fs.readdirSync( docPath )
+        .map( ( item ) => {
+            const fpath = join( docPath, item );
+
+            if ( fs.lstatSync( fpath ).isDirectory() ) {
+                return relativePath( join( fpath, `${ item }.md` ) );
+            }
+
+            return relativePath( join( docPath, item ) );
+        } )
+        .filter( ( i ) => !i.endsWith( 'README.md' ) && i.endsWith( '.md' ) );
 }
 
 module.exports = {
@@ -36,38 +51,23 @@ module.exports = {
         ],
         sidebar: [
             [ '/', 'Home' ],
-            [ '/food/', 'Food' ],
+            {
+                title: 'Food',
+                path: relativePath( pfood ),
+                sidebarDepth: 1,
+                children: readAndMapDocs( pfood )
+            },
             {
                 title: 'Aunt Euniav',
                 path: relativePath( pAuntEuniav ),
                 sidebarDepth: 1,
-                children: fs.readdirSync( pAuntEuniav )
-                    .map( ( item ) => {
-                        const fpath = join( pAuntEuniav, item );
-
-                        if ( fs.lstatSync( fpath ).isDirectory() ) {
-                            return relativePath( join( fpath, `${ item }.md` ) );
-                        }
-
-                        return relativePath( join( pAuntEuniav, item ) );
-                    } )
-                    .filter( ( i ) => !i.endsWith( 'README.md' ) && i.endsWith( '.md' ) )
+                children: readAndMapDocs( pAuntEuniav )
             },
             {
                 title: 'Mixology',
-                path: relativePath( pdrinks ),
+                path: relativePath( pmixology ),
                 sidebarDepth: 1,
-                children: fs.readdirSync( pdrinks )
-                    .map( ( item ) => {
-                        const fpath = join( pdrinks, item );
-
-                        if ( fs.lstatSync( fpath ).isDirectory() ) {
-                            return relativePath( join( fpath, `${ item }.md` ) );
-                        }
-
-                        return relativePath( join( pdrinks, item ) );
-                    } )
-                    .filter( ( i ) => !i.endsWith( 'README.md' ) && i.endsWith( '.md' ) )
+                children: readAndMapDocs( pmixology )
             },
             [
                 `${ pack.bugs.url }/new?assignees=iSkore&labels=new-recipe&template=new_recipe.md&title=Recipe%3A+`,
