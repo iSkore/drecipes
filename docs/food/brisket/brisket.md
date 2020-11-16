@@ -29,14 +29,17 @@ Note: the approximate time for this recipe is 8 hours
 - rub the brisket with mixture and let rest for at least 1 hour at room temperature
 - heat grill to 275ºF
 - soak wood chips (hickory)
-- once grill is lit and meat has rested, scatter chips in and place brisket on smoke
-- set probe target tempature to 185ºF (takes about 8 hours)
-- once target tempature reached, remove brisket and let rest in tin foil for 30 minutes
+- once grill is lit and meat has rested, scatter wood chips over fire and place brisket on grill grate over **indirect heat** (requires indirect heat plate setter)
+- set probe target tempature to 165ºF (takes 4-8 hours)
+- once 165ºF is reached, wrap brisket in [butcher paper](https://www.amazon.com/Pink-Kraft-Butcher-Paper-Roll/dp/B0776JH663/)
+- move wrapped brisket back to smoking until temperature reaches 205ºF
+- once target tempature reached, remove brisket and let rest for 10 minutes
 
 
 ---
 
 **citation**:
-[Big Green Egg](https://www.biggreenegg.eu/en/inspiration/recipes/brisket)
+- [Rex Mbuthia](http://www.rexmbuthia.com/recipes.html)
+- Modified from [Big Green Egg](https://www.biggreenegg.eu/en/inspiration/recipes/brisket)
 
 ![image](./image.jpg)
