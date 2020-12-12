@@ -13,10 +13,10 @@ tags:
 
 ### ingredients:
 
-- <MixologyConversion n="5 oz"/> Lemonade
-- <MixologyConversion n="0.5 oz"/> Pina Colada mix
-- <MixologyConversion n="0.5 oz"/> Blue Curacao syrup
-- <MixologyConversion n="1 oz"/> Captain Morgan White Rum
+- <MixologyConversion n="5 floz"/> Lemonade
+- <MixologyConversion n="0.5 floz"/> Pina Colada mix
+- <MixologyConversion n="0.5 floz"/> Blue Curacao syrup
+- <MixologyConversion n="1 floz"/> Captain Morgan White Rum
 - <MixologyConversion n="1 cup"/> Pomegranate flavored boba
 - Ice
 
