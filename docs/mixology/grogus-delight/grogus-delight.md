@@ -27,7 +27,8 @@ tags:
 - <MixologyConversion n="0.5 floz"/> Pina Colada mix
 - <MixologyConversion n="1 floz"/> Blue Curacao
 - <MixologyConversion n="1 floz"/> Captain Morgan White Rum
-- <MixologyConversion n="1 cup"/> [Pomegranate flavored boba](https://www.amazon.com/gp/product/B07HHQVX5B)
+- <MixologyConversion n="1 cup"/> Pomegranate flavored boba
+  - [Check it out on Amazon](https://www.amazon.com/gp/product/B07HHQVX5B)
 - Ice
 
 ---
