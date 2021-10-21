@@ -34,12 +34,13 @@ Note: the approximate time for this recipe is 8 hours
 - once 165ºF is reached, wrap brisket in [butcher paper](https://www.amazon.com/Pink-Kraft-Butcher-Paper-Roll/dp/B0776JH663/)
 - move wrapped brisket back to smoking until temperature reaches 205ºF
 - once target tempature reached, remove brisket and let rest for 10 minutes
-
+- if brisket is done early and you need to hold it without cooling, put it wrapped (leave it in the butcher paper) in a cooler with no ice
 
 ---
 
 **citation**:
 - [Rex Mbuthia](http://www.rexmbuthia.com/recipes.html)
 - Modified from [Big Green Egg](https://www.biggreenegg.eu/en/inspiration/recipes/brisket)
+- Modified from [vindulge.com](https://www.vindulge.com/smoked-beef-brisket-recipe/)
 
 ![image](./image.jpg)
