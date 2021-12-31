@@ -12,14 +12,14 @@ Time: 15 minutes
 
 ### ingredients:
 
-- all-beef hot dog
-- poppyseed hot dog bun
+- 1 all-beef hot dog
+- 1 poppyseed hot dog bun
 - <MixologyConversion n="1 tbsp"/> yellow mustard
 - <MixologyConversion n="1 tbsp"/> sweet green pickle relish
 - <MixologyConversion n="1 tbsp"/> chopped onion
-- tomato wedges
-- dill pickle spear
-- sport peppers
+- 4 tomato wedges
+- 1 dill pickle spear
+- 1 sport peppers
 - dash celery salt
 
 ### instructions:
